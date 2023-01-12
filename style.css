@@ -1,0 +1,204 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  height: 350vh;
+  background-color: #e0fbfc;
+}
+
+p {
+  overflow: auto;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(1, 25vh);
+  grid-template-columns: repeat(3, 20vw);
+  justify-content: space-evenly;
+  font-size: 2em;
+  margin-top: 3vh;
+  animation: anim 2s infinite;
+}
+@keyframes anim {
+  from {
+    color: black;
+  }
+  to {
+    color: rgb(61, 61, 253);
+  }
+}
+
+.head {
+  display: grid;
+  place-items: center;
+  background-color: #9db4c0;
+  border: 1px solid black;
+  border-radius: 4%;
+  overflow: auto;
+}
+
+.usa {
+  display: grid;
+  grid-template-rows: 38vh;
+  grid-template-columns: repeat(2, 23vw);
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .usa {
+    grid-template-columns: 23vw;
+    grid-template-rows: repeat(2, 38vh);
+    overflow: auto;
+  }
+}
+
+.usa-img {
+  width: 23vw;
+  height: 38vh;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.usa-p {
+  text-align: left;
+  overflow: auto;
+}
+.title1 {
+  margin-top: 10vh;
+}
+
+.title1::before {
+  margin-left: 2vw;
+  content: "🔹";
+}
+
+.largest {
+  display: grid;
+  grid-template-rows: repeat(1, 42vh);
+  grid-template-columns: repeat(3, 25vw);
+  justify-content: space-between;
+  justify-items: center;
+  margin: 3vh;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .largest {
+    grid-template-rows: repeat(3, 42vh);
+    grid-template-columns: repeat(1, 25vw);
+    overflow: auto;
+    justify-content: center;
+  }
+}
+
+.la {
+  background-color: #9db4c0;
+  text-align: center;
+  overflow: auto;
+}
+
+.flags {
+  width: 25vw;
+  height: 108.5px;
+  border: 1px solid black;
+}
+.title2 {
+  margin-top: 10vh;
+}
+.title2::before {
+  margin-left: 2vw;
+  content: "🔹";
+}
+
+.pop {
+  display: grid;
+  grid-template-rows: 28vh;
+  grid-template-columns: repeat(3, 26vw);
+  justify-content: space-around;
+  background-color: #87bfff;
+  overflow: auto;
+  text-align: center;
+}
+
+.china {
+  border: 1px solid black;
+  width: 26vw;
+  height: 28vh;
+}
+
+.pop1 {
+  display: grid;
+  grid-template-rows: 28vh;
+  grid-template-columns: repeat(3, 26vw);
+  justify-content: space-around;
+  background-color: #add7f6;
+  overflow: auto;
+  text-align: center;
+}
+.india {
+  border: 1px solid black;
+  width: 26vw;
+  height: 28vh;
+}
+
+.pop2 {
+  display: grid;
+  grid-template-rows: 28vh;
+  grid-template-columns: repeat(3, 26vw);
+  justify-content: space-around;
+  background-color: #87bfff;
+  overflow: auto;
+  text-align: center;
+}
+.uspop {
+  border: 1px solid black;
+  width: 26vw;
+  height: 28vh;
+}
+
+.ending {
+  display: grid;
+  grid-template-rows: 60vh;
+  grid-template-columns: 60vw;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-bottom: 0vh;
+  font-size: x-large;
+  overflow: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 30vh;
+  grid-template-columns: repeat(3, 25vw);
+  justify-content: space-around;
+  justify-items: center;
+  overflow: auto;
+}
+.f1 {
+  font-size: x-large;
+  overflow: auto;
+}
+.f2 {
+  font-size: x-large;
+  margin-top: 6vh;
+  overflow: auto;
+}
+.f3 {
+  font-size: x-large;
+  margin-top: 5vh;
+  overflow: auto;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .f3 {
+    display: none;
+  }
+}
+
+#input1,
+#input2 {
+  width: 15vw;
+}
